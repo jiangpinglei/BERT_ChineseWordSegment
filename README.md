@@ -1,14 +1,16 @@
-# Bert_ChineseWordSegment
+# BERT_ChineseWordSegment
 
-Try to implement a Chinese word segment work based on Google Bert!
+Try to implement a Chinese word segment work based on Google BERT!
 
 The corpus is extracted from The People's Daily (Chinese: 人民日报, Renmin Ribao).
 
+  <br />
+  
 First git clone https://github.com/google-research/bert.git
 
 Second put the three scripts:  modeling.py、optimization.py、tokenization.py into this project, structure is as follows:
 
-    Bert_ChinesewordSegment
+    BERT_ChinesewordSegment
 
         |____ PEOPLEdata
         |____ output
@@ -42,4 +44,4 @@ INFO:tensorflow:  error_avg = 0.0213
 ```
 And the word segmentation results will be seen in ./output/result_cut/seg_result.txt
 
-If you want learn more details, see the code analysis(in Chinese)[简书:Bert系列（五）——中文分词实践...](https://www.jianshu.com/p/be0a951445f4)
+If you want learn more details, see the code analysis(in Chinese)[简书:BERT系列（五）——中文分词实践...](https://www.jianshu.com/p/be0a951445f4)
