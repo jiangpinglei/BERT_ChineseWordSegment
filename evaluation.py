@@ -85,6 +85,6 @@ if __name__ == "__main__":
         id2label = {value: key for key, value in label2id.items()}
         print(id2label)
     e = SegmenterEvaluation(id2label)
-    precision, recall, f1, error = e.evaluate([6, 1, 1, 2, 3, 4, 7, 0, 0, 0], [6, 2, 4, 2, 3, 4, 7, 0, 0, 0])
+    precision, recall, f1, error, right, predict = e.evaluate([6, 1, 1, 2, 3, 4, 7, 0, 0, 0], [6, 2, 4, 2, 3, 4, 7, 0, 0, 0])
     print(precision, recall, f1, error)
 

@@ -247,10 +247,6 @@ def output_seg_result(output_dir, ori_labels, des_labels):
         token = tokens[i]
         ori_label = ori_labels[i]
         des_label = des_labels[i]
-
-        assert ori_label[-1][1] == des_label[-1][1]
-        assert len(token) != des_label[-1][1]
-
         ori_seg = " ".join([token[each[0]:each[1]] for each in ori_label])
         des_seg = " ".join([token[each[0]:each[1]] for each in des_label])
         writer.write(token + "\n")
